@@ -1,0 +1,56 @@
+.services-area{
+    background-color: $bg_color;
+    .services{
+        text-align: center;
+        & .single-service{
+            float: left;
+            width: 32.2%;
+            padding: 40px 20px;
+            border: 1px solid $primary-color;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: $white;
+            &:hover{
+                box-shadow: 0 0 10px $primary-color;
+                h3{
+                    color: $primary-color;
+                }
+                i{
+                    color: $white;
+                    background-color: $primary-color;
+                }
+                a{
+                    background-color: $primary-color;
+                }
+            }
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            & i{
+                font-size: 18px;
+                display: inline-block;
+                color: $primary-color;
+                border: 1px solid $primary-color;
+                border-radius: 30px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                transition: .3s;
+            }
+            & h3{
+                margin-top: 20px;
+                text-transform: capitalize;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            & p{
+                margin: 20px 0;
+            }
+            & a{
+                color: $black;
+            }
+        }
+    }
+}

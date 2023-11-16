@@ -1,0 +1,52 @@
+.contact-area{
+    background-color: $bg_color;
+}
+.contact-info{
+    .single-info{
+        float: left;
+        width: calc(100% / 3);
+        & i{
+            font-size: 18px;
+        }
+        & h4{
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.contact-guide{
+    .contact-form{
+        float: left;   
+        width: calc(100% / 2);
+        & input{
+            width: 90%;
+            padding: 10px 20px;
+            border: #ddd;
+            margin: 10px 0;
+        }
+        & input[type="submit"] {
+          background: $primary-color;
+          border: 1px solid $primary-color;
+          width: 20%;
+          &:hover{
+            background-color: transparent;
+            border: 1px solid $primary-color;
+            &[value]{
+                color: $black;
+            }
+          }
+          &[value]{
+            color: #fff;
+          }
+        }
+    }
+    .contact-map{
+        padding-left: 20px;
+        & iframe {
+            width: 50%;
+            height: 300px;
+            border: none
+          }
+    }
+}

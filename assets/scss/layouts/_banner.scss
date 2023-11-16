@@ -1,0 +1,16 @@
+/* banner area */
+.banner-area{
+    .banner-content{
+        color: $white;
+        & h1{
+            font-size: 48px;
+        }
+        & p{
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        a{
+            margin: 0 10px;
+        }
+    }
+}

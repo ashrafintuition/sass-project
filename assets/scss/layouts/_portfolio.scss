@@ -1,0 +1,39 @@
+/* portfolio */
+.portfolios{
+    .single-portfolio{
+        float: left;
+        width: 32.2%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        background-size: 100%;
+        transition: 500ms;
+        position: relative;
+        &:hover{
+            background-size: 120%;
+        }
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+
+        h3{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: $black;
+            padding: 10px 0;
+            text-align: center;
+            text-transform: capitalize;
+            color: $white;
+            opacity: .75;
+        }
+
+    }
+
+}

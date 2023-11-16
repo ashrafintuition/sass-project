@@ -1,0 +1,41 @@
+/* Header Area*/
+.header-area{
+    padding: 20px 0;
+    .logo{
+        float: left;
+        width: 230px;
+        & a{
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $primary-color;
+            border: 2px solid $primary-color;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            &:hover{
+                border-color: $black;
+            }
+        }
+    }
+    .menu{
+        float: right;
+        width: 940px;
+        margin-left: 30px;
+        & ul{
+            padding-top: 5px;
+            text-align: right;
+            & li{
+                display: inline-block;
+                & a{
+                    margin-left: 20px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
